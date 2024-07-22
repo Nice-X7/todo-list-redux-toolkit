@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { loadAlbums } from "../redux/Albums/AlbumsSlice";
 import { Photos } from "./Photos";
 import { Route, Routes } from "react-router-dom";
 import { Albums } from "./Albums";
+import { loadAlbums } from "../redux/Albums/AlbumsSlice";
+import { AppDispatch } from "../redux";
 
 
-export const App = () => {
-  const dispatch = useDispatch()
+export const App: React.FC = () => {
+  const dispatch = useDispatch<AppDispatch>()
 
   useEffect(() => {
     dispatch(loadAlbums())

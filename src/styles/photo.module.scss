@@ -1,0 +1,12 @@
+.photos > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 20px;
+
+    > li {
+        border: 1px solid;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        padding: 10px;
+      }
+}

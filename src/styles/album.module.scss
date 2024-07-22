@@ -1,0 +1,25 @@
+.albums {
+  border: 1px solid;
+  width: 28%;
+  margin: 20px 0 0 20px;
+  border-radius: 8px;
+
+    > ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+            list-style-type: none;
+            border-bottom: 1px solid;
+            padding: 10px;
+
+            > a {
+                text-decoration: none;
+              }
+
+            > a.active {
+                color: rgb(177, 139, 33);
+              }
+          }
+    }
+}
